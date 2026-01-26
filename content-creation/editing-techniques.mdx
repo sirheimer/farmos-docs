@@ -1,0 +1,426 @@
+---
+title: Editing Techniques
+description: Advanced workflows for refining AI-generated content
+---
+
+## The 6 Editing Tools
+
+Juice provides six ways to modify your content:
+
+| Tool | Best For | Time | Complexity |
+|------|----------|------|------------|
+| **Edit Text** | Changing copy, fonts, messaging | 15 sec | Easy |
+| **Edit Images** | Modifying visuals, products | 20 sec | Easy |
+| **Edit Style** | Colors, aesthetics, backgrounds | 20 sec | Medium |
+| **Add Slides** | Insert new content | 25 sec | Medium |
+| **Remove Slides** | Delete unnecessary slides | 5 sec | Easy |
+| **Reorder Slides** | Rearrange flow | 10 sec | Easy |
+
+## Editing Workflows
+
+### Workflow 1: Quick Text Polish
+
+**Scenario:** Content is 90% there, just needs better copy
+
+<Steps>
+  <Step title="Click 'Edit Text Copy'">
+    Choose text editing mode
+  </Step>
+
+  <Step title="Select All Slides">
+    Click **Select All** button
+  </Step>
+
+  <Step title="Refine Tone">
+    Prompt: "Make all text more concise and punchy"
+  </Step>
+
+  <Step title="Apply">
+    AI updates all text in ~15 seconds
+  </Step>
+
+  <Step title="Review and Approve">
+    Check preview, approve if good
+  </Step>
+</Steps>
+
+**Total time:** 2 minutes
+
+### Workflow 2: Image Replacement
+
+**Scenario:** Template images are generic, you want your product
+
+<Steps>
+  <Step title="Upload Product Photos">
+    Click image icon, upload to Image References
+  </Step>
+
+  <Step title="Click 'Edit Images'">
+    Choose image editing mode
+  </Step>
+
+  <Step title="Select Product Slides">
+    Select slides 2, 4, and 6 (wherever product should appear)
+  </Step>
+
+  <Step title="Prompt with Reference">
+    "Replace the generic product with my product from the image reference"
+  </Step>
+
+  <Step title="Set Image Mode">
+    Change to **Original** to use exact product photo
+  </Step>
+
+  <Step title="Apply">
+    AI replaces images
+  </Step>
+</Steps>
+
+**Total time:** 3 minutes
+
+### Workflow 3: Complete Style Overhaul
+
+**Scenario:** Content structure is perfect, but style is off-brand
+
+<Steps>
+  <Step title="Upload Style References">
+    Add 2-3 brand aesthetic examples
+  </Step>
+
+  <Step title="Click 'Edit Style'">
+    Choose style editing
+  </Step>
+
+  <Step title="Select All Slides">
+    Apply style to entire slideshow
+  </Step>
+
+  <Step title="Comprehensive Prompt">
+    "Apply the dark, moody, premium aesthetic from my style references. Use my brand colors (from Brand Kit) and make backgrounds consistently dark."
+  </Step>
+
+  <Step title="Apply">
+    Wait ~30 seconds for full style regeneration
+  </Step>
+
+  <Step title="Review">
+    Check if style matches expectations
+  </Step>
+</Steps>
+
+**Total time:** 4 minutes
+
+### Workflow 4: Structural Changes
+
+**Scenario:** Need to add context slide and reorder flow
+
+<Steps>
+  <Step title="Add Missing Slide">
+    Click **Add Slides** → Choose position → Describe slide → Generate
+  </Step>
+
+  <Step title="Reorder Slides">
+    Click **Reorder Slides** → Drag new slide to better position
+  </Step>
+
+  <Step title="Remove Weak Slide">
+    Click **Remove Slides** → Select slide that's now redundant → Remove
+  </Step>
+
+  <Step title="Polish Flow">
+    Click **Edit Text** → Adjust transitions between reordered slides
+  </Step>
+</Steps>
+
+**Total time:** 5-7 minutes
+
+## Advanced Editing Patterns
+
+### Pattern 1: Slide-Specific Targeting
+
+Edit individual slides with precision:
+
+**General edit:**
+```
+"Make the images more vibrant"
+```
+**Applies to:** All selected slides
+
+**Targeted edit:**
+```
+"On slide 3, replace the illustration with a photo of someone using a laptop. On slide 5, make the background gradient instead of solid."
+```
+**Applies to:** Specific slides only
+
+### Pattern 2: Comparative Editing
+
+Reference other slides when editing:
+
+**Examples:**
+- "Make slide 4 match the style of slide 1"
+- "Use the same background from slide 2 on slides 3-5"
+- "Keep slide 1's font but make it larger on other slides"
+
+### Pattern 3: Conditional Editing
+
+Use "if/then" logic in prompts:
+
+**Examples:**
+- "If there's a person in the image, make them more prominent"
+- "On slides with products, ensure product is centered"
+- "For slides with text-heavy copy, use a simpler background"
+
+### Pattern 4: Style Chaining
+
+Make multiple small edits in sequence:
+
+**Step 1:** "Darken all backgrounds"  
+**Step 2:** "Make text white for better contrast"  
+**Step 3:** "Add subtle gradient to backgrounds"  
+**Step 4:** "Increase text size 20%"
+
+Each edit builds on the previous. **Result:** Cohesive, polished transformation.
+
+## Editing with References
+
+### Technique 1: Reference-Guided Image Edit
+
+**Setup:**
+- Upload product photo to Image References
+- Select slides 2, 4, 6 (product slides)
+
+**Prompt:**
+"Replace the placeholder product with my actual product from the image reference. Match the lighting and angle from the reference."
+
+**Result:** Your exact product, perfectly integrated into template style.
+
+### Technique 2: Style Transfer Edit
+
+**Setup:**
+- Upload 3 photos with dark, moody aesthetic to Style References
+- Select all slides
+
+**Prompt:**
+"Apply the dark, cinematic style from my style references. Keep all text and layout, just change the mood."
+
+**Result:** Same content, dramatically different aesthetic.
+
+### Technique 3: Omni-Guided Regeneration
+
+**Setup:**
+- Upload perfect reference to Omni bucket
+- Select all slides
+
+**Prompt:**
+"Regenerate this entire slideshow to match the aesthetic of the omni reference while keeping my topic and message."
+
+**Result:** Complete visual overhaul while preserving content.
+
+## Editing Don'ts
+
+### ❌ Don't Over-Edit
+
+**Problem:** Making 10+ edits trying to achieve perfection  
+**Better:** Generate new content if you're that far off
+
+After 3-4 edits, you're probably better off regenerating with a different template or better initial settings.
+
+### ❌ Don't Edit Without Previewing
+
+**Problem:** Editing blind without checking results  
+**Better:** Preview after each edit to verify direction
+
+Always click through slides after an edit to ensure it worked as expected.
+
+### ❌ Don't Use Vague Prompts
+
+**Vague:** "Make it better"  
+**Specific:** "Make the headline larger and change the background to solid black"
+
+AI needs specific direction.
+
+### ❌ Don't Fight the Template
+
+**Problem:** Trying to completely transform template structure through editing  
+**Better:** Choose a different template that's closer to your vision
+
+Templates have inherent structure. Work with it, don't fight it.
+
+## Editing Shortcuts & Tips
+
+### Batch Slide Selection
+
+**Quick select:**
+- **Odd slides:** Click 1, 3, 5, 7
+- **Even slides:** Click 2, 4, 6, 8
+- **Range:** Shift+Click first and last to select range
+
+**Use for:** Applying consistent changes to alternate slides.
+
+### Edit Iteration History
+
+View what you've edited:
+
+<Steps>
+  <Step title="Click 'View History'">
+    In editing interface
+  </Step>
+
+  <Step title="See All Edits">
+    Chronological list of every change made
+  </Step>
+
+  <Step title="Reference Old Prompts">
+    See what worked (or didn't) to improve future prompts
+  </Step>
+</Steps>
+
+### Undo an Edit
+
+Can't undo directly, but you can:
+
+1. Note the last edit that worked
+2. Click **← Back** to topics
+3. Regenerate content
+4. Reapply only the edits you want
+
+<Warning>
+**No built-in undo yet.** Be thoughtful before applying edits. Future updates will add version control.
+</Warning>
+
+## Editing for Different Goals
+
+### Goal: Maximum Brand Consistency
+
+**Approach:**
+1. Edit Style → "Use only my brand colors from Brand Kit"
+2. Upload brand assets as Style References
+3. Edit Text → "Match the tone from my Brand Kit"
+4. Increase Creative Control to 0.8
+
+### Goal: Speed (Minimal Editing)
+
+**Approach:**
+1. Write better initial topics
+2. Choose templates that match your style
+3. Set Advanced Settings correctly before generation
+4. Approve with 0-1 edits
+
+### Goal: Perfect Product Showcase
+
+**Approach:**
+1. Upload professional product photos as Image References
+2. Set Image Mode to **Original**
+3. Enable **Prioritize User Uploads**
+4. Edit Text only (keep images untouched)
+5. Polish copy to highlight features
+
+### Goal: Match Viral Content
+
+**Approach:**
+1. Screenshot viral TikTok in your niche
+2. Upload as Omni Reference
+3. Generate content
+4. Edit to adjust message (keep style)
+5. Approve with similar aesthetic, your topic
+
+## Editing Performance by Experience Level
+
+### Beginners (First 10 pieces)
+
+**Expect:**
+- 3-5 edits per content
+- 10-15 minutes per piece
+- Lots of experimentation
+
+**Focus on:** Learning what prompts work
+
+### Intermediate (10-50 pieces)
+
+**Expect:**
+- 1-2 edits per content
+- 5-10 minutes per piece
+- More confident prompt writing
+
+**Focus on:** Dial in your preferences
+
+### Advanced (50+ pieces)
+
+**Expect:**
+- 0-1 edits per content
+- 3-5 minutes per piece
+- Nail it first try
+
+**Focus on:** Optimizing settings to minimize edits
+
+<Tip>
+**Track your edit count.** Most users reduce edits by 50% after their first 20 content pieces as they learn the system.
+</Tip>
+
+## Editing Checklist
+
+Before approving content, verify:
+
+- [ ] Text is accurate and on-brand
+- [ ] Images support the message
+- [ ] No spelling/grammar errors
+- [ ] Slides flow logically
+- [ ] Hook grabs attention (slide 1)
+- [ ] CTA is clear (final slide)
+- [ ] Brand colors are present
+- [ ] Visual style is consistent
+- [ ] Nothing looks "off" or awkward
+
+If all boxes checked → Approve!
+
+## When to Start Over vs Keep Editing
+
+### Keep Editing When:
+
+- Content is 70%+ there
+- Structure is right, execution needs tweaks
+- You've made &lt;3 edits already
+
+### Start Over When:
+
+- Content is &lt;50% right
+- You've made 4+ edits and it's still not working
+- Template doesn't fit your topic
+- Faster to regenerate than keep editing
+
+<Info>
+**Rule of thumb:** If you're on your 4th edit and still not happy, go back and try a different template or write a better topic.
+</Info>
+
+## Editing Mastery Checklist
+
+You've mastered editing when you can:
+
+- [ ] Write prompts that work in one try
+- [ ] Choose correct Image Mode for content type
+- [ ] Use references effectively
+- [ ] Make &lt;2 edits per content on average
+- [ ] Know when to edit vs regenerate
+- [ ] Approve content confidently
+
+## Next Steps
+
+You've now learned the full content creation process! Here's what to explore next:
+
+<CardGroup cols={2}>
+  <Card title="Create Your First Content" icon="wand-magic-sparkles" href="https://dashboard.juice.co/content">
+    Put these techniques into practice
+  </Card>
+  
+  <Card title="Account Setup" icon="users" href="/accounts/creating-accounts">
+    Create accounts to post your content
+  </Card>
+  
+  <Card title="Advanced Settings Deep Dive" icon="sliders" href="/content-creation/advanced-settings">
+    Master Creative Control and Image Modes
+  </Card>
+  
+  <Card title="Analytics Tracking" icon="chart-line" href="/analytics/dashboard-overview">
+    Monitor your content's performance
+  </Card>
+</CardGroup>

@@ -1,0 +1,125 @@
+{
+  "name": "Juice Documentation",
+  "logo": {
+    "light": "/favicon.svg",
+    "dark": "/favicon.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#303030",
+    "light": "#FFFFFF",
+    "dark": "#303030",
+    "anchors": {
+      "from": "#FFFFFF",
+      "to": "#FFFFFF"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Dashboard",
+      "url": "https://app.juice.co"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://juice.co"
+  },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "Understanding Juice",
+      "pages": [
+        "essentials/how-juice-works",
+        "essentials/content-strategy",
+        "essentials/best-practices"
+      ]
+    },
+    {
+      "group": "Brand Hub",
+      "pages": [
+        "brand-hub/overview",
+        "brand-hub/creating-brand-kit",
+        "brand-hub/enriching-brand-kit",
+        "brand-hub/brand-assets"
+      ]
+    },
+    {
+      "group": "Templates",
+      "pages": [
+        "templates/overview",
+        "templates/choosing-templates",
+        "templates/template-types",
+        "templates/requesting-custom-templates"
+      ]
+    },
+    {
+      "group": "Content Creation",
+      "pages": [
+        "content-creation/overview",
+        "content-creation/step-1-selecting-template",
+        "content-creation/step-2-choosing-topic",
+        "content-creation/step-3-generating-content",
+        "content-creation/step-4-editing-content",
+        "content-creation/step-5-approving-content",
+        "content-creation/step-6-assigning-accounts",
+        "content-creation/advanced-settings",
+        "content-creation/using-references",
+        "content-creation/editing-techniques"
+      ]
+    },
+    {
+      "group": "Accounts",
+      "pages": [
+        "accounts/overview",
+        "accounts/creating-accounts",
+        "accounts/account-lifecycle",
+        "accounts/account-settings",
+        "accounts/cross-posting"
+      ]
+    },
+    {
+      "group": "Posting",
+      "pages": [
+        "posting/how-posting-works",
+        "posting/scheduling",
+        "posting/content-rotation",
+        "posting/managing-posts"
+      ]
+    },
+    {
+      "group": "Assets",
+      "pages": [
+        "assets/overview",
+        "assets/uploading-assets",
+        "assets/organizing-folders",
+        "assets/asset-types"
+      ]
+    },
+    {
+      "group": "Analytics",
+      "pages": [
+        "analytics/dashboard-overview",
+        "analytics/understanding-metrics",
+        "analytics/viral-milestones",
+        "analytics/performance-tracking"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": [
+        "faq"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/juicecore",
+    "linkedin": "https://www.linkedin.com/company/letsjuiceit",
+    "website": "https://juice.co"
+  }
+}

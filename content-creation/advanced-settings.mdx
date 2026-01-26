@@ -1,0 +1,354 @@
+---
+title: Advanced Settings
+description: Master Image Modes, Creative Control, and advanced generation settings
+---
+
+## Accessing Advanced Settings
+
+Advanced settings are available during content generation and editing:
+
+<Steps>
+  <Step title="Open Content Generator">
+    Navigate to Content → Create Content
+  </Step>
+
+  <Step title="Select Template and Topic">
+    Choose your template and topic as normal
+  </Step>
+
+  <Step title="Click 'Advanced Settings'">
+    Below the topic input, click **Advanced** to expand settings
+  </Step>
+</Steps>
+
+## Image Mode Settings
+
+**Image Mode** is the most important advanced setting. It controls how AI handles images in your content.
+
+### The Three Image Modes
+
+<Tabs>
+  <Tab title="Original">
+    **Use exact images as-is, no modifications**
+    
+    **What it does:**
+    - AI uses template images exactly
+    - No edits, no variations
+    - Fastest generation time
+    
+    **Use when:**
+    - You have perfect product photos
+    - You need photo accuracy (SKUs, exact colors)
+    - You uploaded specific reference images to use
+    
+    **Example scenario:**  
+    You have professional product photography and want it to appear exactly as-is in your slideshow.
+    
+    **Creative Control:** 0
+  </Tab>
+  
+  <Tab title="Edit">
+    **AI edits your images to match brand style**
+    
+    **What it does:**
+    - Starts with template or reference images
+    - Modifies them to match your brand aesthetic
+    - Preserves core subject, changes environment/style
+    
+    **Use when:**
+    - You have product photos but they need enhancement
+    - You want brand colors applied to template images
+    - You need studio-quality look from basic photos
+    
+    **Example scenario:**  
+    You have a decent product photo but the lighting/background isn't great. AI makes it look professionally shot while keeping your exact product.
+    
+    **Creative Control:** 0.5 (default)
+  </Tab>
+  
+  <Tab title="New">
+    **Generate completely new AI images**
+    
+    **What it does:**
+    - Creates images from scratch
+    - No reliance on template images
+    - Maximum creative freedom
+    
+    **Use when:**
+    - You don't have photos
+    - You want illustrations/graphics
+    - You need variety across variations
+    
+    **Example scenario:**  
+    You're creating educational content about productivity and want unique illustrations for each slide, not stock photos.
+    
+    **Creative Control:** 1.0
+  </Tab>
+</Tabs>
+
+### Image Mode Visual Examples
+
+**Scenario: Product showcase for a SaaS tool**
+
+**Original Mode:**
+- Slide shows your exact dashboard screenshot
+- No edits, perfect accuracy
+- ✅ Use for: Demo videos, feature showcases
+
+**Edit Mode:**
+- Starts with your dashboard screenshot
+- AI enhances lighting, adds polish, matches brand colors
+- Dashboard layout stays same, visual quality improves
+- ✅ Use for: Product marketing videos
+
+**New Mode:**
+- AI generates illustration of a dashboard
+- Inspired by your brand but not your exact UI
+- ✅ Use for: Concept videos, high-level overviews
+
+<Warning>
+**Image Mode can't be changed after generation.** Choose carefully before generating content.
+</Warning>
+
+## Creative Control Slider
+
+Fine-tune how closely AI follows the template vs your brand.
+
+### The Slider Scale
+
+```
+0 ──────────── 0.5 ──────────── 1.0
+Conservative   Balanced        Creative
+```
+
+### Creative Control: 0 (Conservative)
+
+**What happens:**
+- Stays very close to template
+- Minimal brand customization
+- Uses template colors/fonts mostly
+
+**Use when:**
+- Template already matches your brand
+- You want consistency across all content
+- You're using "Original" image mode
+
+**Pros:** Fast, predictable, template-faithful  
+**Cons:** Less brand personality
+
+### Creative Control: 0.5 (Balanced) - RECOMMENDED
+
+**What happens:**
+- Blend of template + brand
+- Applies your brand colors
+- Uses your fonts when appropriate
+- Maintains template structure
+
+**Use when:**
+- Most content (default setting)
+- You want brand consistency + template structure
+- You're using "Edit" image mode
+
+**Pros:** Best of both worlds  
+**Cons:** None - this is the sweet spot
+
+### Creative Control: 1.0 (Creative)
+
+**What happens:**
+- Maximum brand customization
+- Heavy use of brand colors/fonts
+- Most deviation from template
+- Longer generation time
+
+**Use when:**
+- You have very specific brand guidelines
+- Template is just a starting point
+- You're using "New" image mode
+
+**Pros:** Most on-brand  
+**Cons:** Can stray from template's proven structure
+
+## Advanced Toggles
+
+### Keep Background Static
+
+<Accordion title="What it does">
+Prevents AI from changing background elements across slides.
+
+**Enabled:**
+- All slides share same background
+- Only foreground elements change
+- Creates cohesive look
+
+**Disabled (default):**
+- Each slide can have different background
+- More visual variety
+- Better for holding attention
+
+**Use when:** You want minimalist, consistent aesthetic across all slides.
+</Accordion>
+
+### Prioritize User Uploads
+
+<Accordion title="What it does">
+Forces AI to use your reference images prominently.
+
+**Enabled:**
+- Reference images appear larger/more prominent
+- Template images are secondary
+- Your photos are the focus
+
+**Disabled (default):**
+- Reference images blend with template
+- Balanced composition
+
+**Use when:** You uploaded product photos that MUST be the hero of each slide.
+</Accordion>
+
+## Combining Advanced Settings
+
+Different combinations create different results:
+
+### Scenario 1: Product Photo Showcase
+
+**Settings:**
+- Image Mode: **Original**
+- Creative Control: **0**
+- Prioritize User Uploads: **Enabled**
+- References: **Upload product photos**
+
+**Result:** Your exact product photos displayed prominently with minimal AI editing.
+
+### Scenario 2: Brand-Heavy Content
+
+**Settings:**
+- Image Mode: **Edit**
+- Creative Control: **1.0**
+- Keep Background Static: **Enabled**
+- References: **Upload brand assets**
+
+**Result:** Heavily branded content with consistent aesthetic and your visual elements.
+
+### Scenario 3: Template-Faithful Content
+
+**Settings:**
+- Image Mode: **Edit**
+- Creative Control: **0.5**
+- All toggles: **Disabled**
+- References: **None**
+
+**Result:** Clean execution of template structure with your brand colors/voice applied.
+
+### Scenario 4: Maximum Creativity
+
+**Settings:**
+- Image Mode: **New**
+- Creative Control: **1.0**
+- References: **Style references for mood**
+
+**Result:** Highly unique, brand-specific content that uses template as loose inspiration.
+
+## When to Use Advanced Settings
+
+### Beginners: Stick to Defaults
+
+For your first 10-20 pieces of content:
+- Image Mode: **Edit**
+- Creative Control: **0.5**
+- Toggles: **Off**
+- References: **None**
+
+**Why:** Learn the system before optimizing.
+
+### Intermediate: Test Image Modes
+
+After 20+ pieces:
+- Try **Original** mode for product content
+- Try **New** mode for educational content
+- Compare performance data
+
+### Advanced: Fine-Tune Everything
+
+After 50+ pieces and clear data:
+- Dial in Creative Control based on what performs
+- Use References extensively
+- Create brand-specific presets
+
+## Advanced Settings by Content Type
+
+| Content Type | Image Mode | Creative Control | Toggles |
+|--------------|------------|------------------|---------|
+| Product demo | Original | 0 | Prioritize Uploads ON |
+| Educational | New | 0.5 | All OFF |
+| Brand story | Edit | 1.0 | Keep Background Static ON |
+| Thought leadership | New | 0.5 | All OFF |
+| Feature showcase | Edit | 0.5 | Prioritize Uploads ON |
+
+## Presets (Coming Soon)
+
+In future updates, you'll be able to:
+- Save advanced setting combinations as presets
+- Quick-load settings for different content types
+- Share presets with team members
+
+## Troubleshooting Advanced Settings
+
+### Generation is Taking Too Long
+
+**Cause:** High Creative Control + New Image Mode + References  
+**Solution:** Lower Creative Control to 0.5 or use Edit mode
+
+### Images Don't Look Like Brand
+
+**Cause:** Creative Control too low or wrong Image Mode  
+**Solution:** Increase Creative Control to 0.7-1.0, use Edit or New mode
+
+### Content Too Different From Template
+
+**Cause:** Creative Control too high  
+**Solution:** Lower to 0.3-0.5
+
+### My Product Photo Isn't Showing
+
+**Cause:** Not using references or Prioritize Uploads is off  
+**Solution:** Upload as Image Reference and enable Prioritize Uploads toggle
+
+## Best Practices
+
+### Start Simple
+
+Don't overwhelm yourself with all settings at once:
+
+**Week 1-2:** Use defaults  
+**Week 3-4:** Experiment with Image Modes  
+**Month 2:** Add Creative Control adjustments  
+**Month 3:** Master References + Toggles
+
+### Document What Works
+
+Keep notes on settings that work for different content types:
+- Product content: Original mode, Control 0
+- Educational: New mode, Control 0.5
+- Brand content: Edit mode, Control 0.8
+
+### A/B Test Settings
+
+Create same topic twice with different settings:
+- Version A: Edit mode, Control 0.5
+- Version B: New mode, Control 1.0
+
+Post to different accounts, compare results after 7 days.
+
+## Next Level
+
+Master these advanced features next:
+
+<CardGroup cols={2}>
+  <Card title="Using References" icon="images" href="/content-creation/using-references">
+    Midjourney-style image prompts for precision
+  </Card>
+  
+  <Card title="Editing Techniques" icon="pen-ruler" href="/content-creation/editing-techniques">
+    Advanced editing workflows and tips
+  </Card>
+</CardGroup>

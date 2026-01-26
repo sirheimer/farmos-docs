@@ -1,0 +1,370 @@
+---
+title: Using Reference Images
+description: Guide AI with your own images - Midjourney-style image prompting
+---
+
+## What Are Reference Images?
+
+Reference images tell the AI: "Use this as inspiration for the content you're creating."
+
+Unlike simply uploading images to use in slides, references **guide the generation process** to match your desired style, elements, or mood.
+
+<Info>
+**Think of references like showing examples to a designer:** "I want it to look like this" or "Include this element in the design."
+</Info>
+
+## The Three Reference Types
+
+Juice uses a **three-bucket system** inspired by Midjourney:
+
+### Image References (Elements Bucket)
+
+**What they do:** Specific elements or objects to include in the generated content
+
+**Use when:**
+- You have product photos to incorporate
+- You want specific objects/items in slides
+- You need precise visual elements
+
+**Example use cases:**
+- Upload your product → AI incorporates it into slides
+- Upload logo → AI places it appropriately
+- Upload team photo → AI includes team members
+
+**Limit:** 4 image references max
+
+<Accordion title="Image References Example">
+**Scenario:** You're creating content about your SaaS dashboard
+
+**Upload:** Screenshot of your dashboard  
+**Prompt:** "Show our dashboard interface in slides 2-4"  
+**Result:** AI generates slides featuring your actual dashboard
+
+**vs. without reference:** AI would generate a generic dashboard illustration
+</Accordion>
+
+### Style References (Aesthetic Bucket)
+
+**What they do:** Visual style, mood, and aesthetic inspiration
+
+**Use when:**
+- You want a specific visual aesthetic
+- You're going for a certain mood/vibe
+- You want to match existing brand materials
+
+**Example use cases:**
+- Upload minimalist design → AI matches that clean aesthetic
+- Upload neon-lit photos → AI creates moody, dark content
+- Upload pastel images → AI uses soft, gentle color palettes
+
+**Limit:** 4 style references max
+
+<Accordion title="Style References Example">
+**Scenario:** You want your content to have a "dark, premium, tech-forward" aesthetic
+
+**Upload:** 2-3 photos of premium tech products with dark backgrounds  
+**Prompt:** "Use the moody, high-end aesthetic from the style references"  
+**Result:** AI generates content with dark backgrounds, dramatic lighting, and premium feel
+
+**vs. without reference:** AI would use default bright, energetic TikTok style
+</Accordion>
+
+### Omni Reference (Complete Style Transfer)
+
+**What it does:** "Make it look EXACTLY like this image"
+
+**Use when:**
+- You have one perfect reference image
+- You want complete style replication
+- You're matching existing content
+
+**Example use cases:**
+- Upload competitor video frame → AI matches that style
+- Upload brand campaign visual → AI replicates aesthetic
+- Upload viral post → AI captures that vibe
+
+**Limit:** 1 omni reference (it's powerful!)
+
+<Accordion title="Omni Reference Example">
+**Scenario:** You saw a viral TikTok with the perfect aesthetic for your brand
+
+**Upload:** Screenshot from that TikTok  
+**Prompt:** "Match the overall look and feel of this reference"  
+**Result:** Your content adopts the layout, color scheme, styling, and vibe of that reference
+
+**vs. without reference:** AI uses standard template styling
+</Accordion>
+
+## How to Add References
+
+### During Initial Generation
+
+<Steps>
+  <Step title="Open Advanced Settings">
+    Click **Advanced** below topic input
+  </Step>
+
+  <Step title="Expand References Section">
+    Scroll down to see three reference dropzones:
+    - **Image** (Elements)
+    - **Style** (Aesthetic)
+    - **Omni** (Complete)
+  </Step>
+
+  <Step title="Drag and Drop Images">
+    Drop images into the appropriate bucket:
+    - Product photos → Image bucket
+    - Aesthetic inspiration → Style bucket
+    - Complete reference → Omni bucket
+  </Step>
+
+  <Step title="Generate with References">
+    Click topic to generate. AI uses your references to guide creation.
+  </Step>
+</Steps>
+
+### During Editing
+
+You can also add references when editing existing content:
+
+<Steps>
+  <Step title="Click Image Icon">
+    In the editing interface, click the image icon below your edit prompt
+  </Step>
+
+  <Step title="Upload References">
+    References section expands. Upload images to any bucket.
+  </Step>
+
+  <Step title="Write Edit Prompt">
+    "Use the images from my references to update slides 2-4"
+  </Step>
+
+  <Step title="Apply Edit">
+    AI regenerates those slides using your references
+  </Step>
+</Steps>
+
+## Reference Best Practices
+
+### Image Quality Matters
+
+**Good reference images:**
+- ✅ High resolution (1080p+)
+- ✅ Clear subject/focus
+- ✅ Good lighting
+- ✅ Simple, clean background
+
+**Poor reference images:**
+- ❌ Low resolution/blurry
+- ❌ Multiple subjects (unclear focus)
+- ❌ Dark or poorly lit
+- ❌ Busy background with distractions
+
+### Match References to Image Mode
+
+| Image Mode | Best Reference Type |
+|------------|---------------------|
+| **Original** | Image References (your exact photos) |
+| **Edit** | Image + Style References (guide edits) |
+| **New** | Style References (mood/aesthetic only) |
+
+### Use Multiple References Strategically
+
+**Don't:** Upload 4 completely different style references  
+**Do:** Upload 4 references with consistent aesthetic
+
+**Why:** Conflicting references confuse the AI. Cohesive references reinforce the desired style.
+
+### Reference + Prompt Combination
+
+References work best when paired with descriptive prompts:
+
+**Weak:** Just upload image, no prompt  
+**Strong:** Upload image + "Use the clean, minimalist style from the reference"
+
+**Stronger:** Upload image + "Apply the dark moody lighting from style reference 1 and incorporate the product from image reference 1"
+
+## Advanced Reference Techniques
+
+### Layering References
+
+Combine multiple reference types for precision:
+
+<Steps>
+  <Step title="Image Reference">
+    Upload your product photo
+  </Step>
+
+  <Step title="Style Reference">
+    Upload aesthetic inspiration (premium, minimalist, etc.)
+  </Step>
+
+  <Step title="Prompt">
+    "Create slides showing [image reference product] with the aesthetic of [style references]"
+  </Step>
+</Steps>
+
+**Result:** Your product rendered in your desired aesthetic.
+
+### Moving References Between Buckets
+
+Changed your mind about bucket placement?
+
+<Steps>
+  <Step title="Drag Reference">
+    Click and hold a reference image
+  </Step>
+
+  <Step title="Drop in New Bucket">
+    Drag to different bucket (Image → Style or vice versa)
+  </Step>
+</Steps>
+
+**Use when:** You realize an image works better as style inspiration than as an element to include.
+
+### Slide-Specific References
+
+Target references to specific slides:
+
+**In your prompt:**
+- "Use image reference 1 on slide 2"
+- "Apply style reference 2 to slides 4-6"
+- "Use omni reference only on the final slide"
+
+## Reference Use Cases by Industry
+
+### SaaS Products
+
+**Image References:**
+- Dashboard screenshots
+- Feature UI
+- Integration logos
+
+**Style References:**
+- Tech photography (laptops, desks)
+- Modern, clean aesthetic
+- Your brand's website screenshots
+
+### E-Commerce/DTC
+
+**Image References:**
+- Product photos (multiple angles)
+- Packaging shots
+- Lifestyle photos with product
+
+**Style References:**
+- Your brand's Instagram aesthetic
+- Competitor product photography
+- Mood board images
+
+### B2B Services
+
+**Image References:**
+- Team photos
+- Office environment
+- Client results/charts
+
+**Style References:**
+- Professional photography
+- Corporate aesthetic
+- Brand materials
+
+## Common Reference Mistakes
+
+### ❌ Using References as Direct Slide Content
+
+**Wrong:** Upload 6 images and expect them to be the exact 6 slides  
+**Right:** Upload images to guide what AI generates
+
+References are **inspiration**, not direct content.
+
+### ❌ Too Many Conflicting References
+
+**Wrong:** Upload minimalist aesthetics + maximalist aesthetics  
+**Right:** Upload references with consistent visual language
+
+### ❌ Not Describing Reference Intent
+
+**Wrong:** Upload images with no prompt  
+**Right:** Upload images + prompt explaining how to use them
+
+### ❌ Using Low-Quality References
+
+**Wrong:** Upload blurry screenshots or compressed images  
+**Right:** Upload high-res, clear images
+
+## Removing References
+
+<Steps>
+  <Step title="Hover Over Reference">
+    Hover over the reference image in its bucket
+  </Step>
+
+  <Step title="Click X">
+    Click the X icon in the top-right
+  </Step>
+
+  <Step title="Reference Removed">
+    Image is deleted and won't be used in generation
+  </Step>
+</Steps>
+
+## Reference Workflow Examples
+
+### Workflow 1: Product Feature Content
+
+**Goal:** Show your actual product in educational content
+
+1. Create content, select "How To" template
+2. Write topic: "How to use our dashboard to track team performance"
+3. Open Advanced Settings
+4. Upload dashboard screenshots to **Image References**
+5. Set Image Mode to **Original**
+6. Enable **Prioritize User Uploads**
+7. Generate content
+8. AI creates slides with your exact dashboard
+
+### Workflow 2: Brand-Aesthetic Content
+
+**Goal:** Match your brand's Instagram visual style
+
+1. Create content, select any template
+2. Write topic
+3. Open Advanced Settings
+4. Upload 3 of your best Instagram posts to **Style References**
+5. Set Image Mode to **Edit**
+6. Set Creative Control to **0.8**
+7. Generate content
+8. AI creates content matching your Instagram aesthetic
+
+### Workflow 3: Competitor-Inspired Content
+
+**Goal:** Create content similar to what's working for competitors
+
+1. Screenshot competitor's viral TikTok
+2. Create content, select similar template
+3. Open Advanced Settings
+4. Upload screenshot to **Omni Reference**
+5. Set Image Mode to **New**
+6. Prompt: "Create content inspired by the reference but with our brand and message"
+7. Generate
+8. AI creates similar vibe but original content
+
+## What Happens Next?
+
+After mastering references:
+- Your content will be more on-brand
+- Less editing needed
+- Faster approval process
+- Better consistency across content pieces
+
+<CardGroup cols={2}>
+  <Card title="Editing Techniques" icon="pen-ruler" href="/content-creation/editing-techniques">
+    Advanced editing workflows
+  </Card>
+  
+  <Card title="Advanced Settings" icon="sliders" href="/content-creation/advanced-settings">
+    Back to advanced settings overview
+  </Card>
+</CardGroup>
