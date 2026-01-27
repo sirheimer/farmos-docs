@@ -137,6 +137,19 @@ Outputs to `_site/` directory for hosting on:
 - `/favicon.svg` - Favicon
 - Screenshots for each page (add to `/images/` folder)
 
+## Related Projects
+
+This documentation site is part of the Juice platform:
+
+- **[farmos-web](../farmos-web/)** - Main dashboard (links to these docs)
+- **[farmos-web-node](../farmos-web-node/)** - Web server (proxies documentation requests with authentication)
+- **[farmos-backend](../farmos-backend/)** - Django API (verifies documentation access codes)
+- **[Juice Root Documentation](../)** - System architecture
+
+**Access:** Documentation is accessed through farmos-web-node proxy at `/docs` with Django-verified access codes.
+
+---
+
 ## Questions?
 
 Contact: docs@juice.co
