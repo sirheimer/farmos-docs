@@ -1,0 +1,355 @@
+---
+description: "Mintlify documentation patterns - MDX writing, tone, components, navigation, and user-focused content"
+alwaysApply: false
+globs: [
+  "farmos-docs/**/*.mdx",
+  "farmos-docs/**/*.md",
+  "farmos-docs/mint.json"
+]
+---
+
+# farmos-docs - Navigation & Patterns
+
+> Customer-facing Mintlify documentation for Juice
+
+---
+
+## 🎯 **Project Identity**
+
+**Customer documentation site** built with Mintlify.
+
+**Audience:** Marketing managers and content creators (non-technical)  
+**Tone:** Conversational, helpful, friendly  
+**Format:** Short paragraphs, bullets, visual examples  
+**Goal:** Help users succeed with Juice, not just list features
+
+**Live URL:** https://docs.juice.co  
+**Structure:** 42+ pages across 8 sections
+
+---
+
+## 📝 **Top 7 Critical Rules**
+
+1. **NEVER use technical jargon** - Write for non-technical users
+2. **NEVER skip screenshots** - Always include visuals
+3. **NEVER write long paragraphs** - Keep it scannable (2-3 sentences max)
+4. **NEVER forget frontmatter** - title and description required
+5. **NEVER deploy without testing** - Run `mintlify dev` first
+6. **NEVER modify mint.json navigation** - Without testing
+7. **NEVER use developer terminology** - Use user-friendly language
+
+---
+
+## ✍️ **Writing Tone & Style**
+
+### Write for Non-Technical Users
+
+**✅ GOOD - Conversational, clear:**
+```mdx
+Click the "Generate" button to create your first video. Juice's AI will 
+analyze your brand and create content that matches your style.
+```
+
+**❌ BAD - Too technical:**
+```mdx
+Execute the content generation API endpoint via the dashboard interface 
+to initialize the AI generation pipeline for your brand kit configuration.
+```
+
+### Keep It Simple
+
+- **Short paragraphs:** 2-3 sentences max
+- **Bullet points:** For lists
+- **Clear headings:** Descriptive and scannable
+- **Active voice:** "Click the button" not "The button should be clicked"
+
+---
+
+## 📦 **Mintlify Components**
+
+### Steps Component
+
+```mdx
+<Steps>
+  <Step title="First step">
+    Click on "Content" in the sidebar.
+  </Step>
+  <Step title="Second step">
+    Choose a template that matches your brand.
+  </Step>
+  <Step title="Third step">
+    Click "Generate" and let the AI work its magic!
+  </Step>
+</Steps>
+```
+
+### Accordion (FAQ)
+
+```mdx
+<Accordion title="How long does generation take?">
+  Most videos are ready in 30-60 seconds. You'll get a notification 
+  when your content is ready to review!
+</Accordion>
+```
+
+### Callouts
+
+```mdx
+<Tip>
+  Pro tip: Try different templates to see what resonates with your audience!
+</Tip>
+
+<Warning>
+  Make sure to review your content before posting. The AI is smart, but 
+  you know your brand best!
+</Warning>
+
+<Note>
+  You can edit any part of the generated content before approving.
+</Note>
+```
+
+### Cards
+
+```mdx
+<CardGroup cols={2}>
+  <Card title="Quick Start" icon="rocket" href="/quickstart">
+    Get up and running in 5 minutes
+  </Card>
+  <Card title="Templates" icon="palette" href="/templates">
+    Explore our template library
+  </Card>
+</CardGroup>
+```
+
+### Frames (Images)
+
+```mdx
+<Frame>
+  <img src="/images/content-creation/template-selection.png" 
+       alt="Template selection screen" />
+</Frame>
+```
+
+---
+
+## 📄 **Page Structure**
+
+### Required Frontmatter
+
+```mdx
+---
+title: "Page Title"
+description: "Brief description for SEO and previews"
+---
+
+# Page Title
+
+Introduction paragraph explaining what this page covers.
+```
+
+### Standard Page Template
+
+```mdx
+---
+title: "Feature Guide"
+description: "Learn how to use this feature"
+---
+
+# Feature Guide
+
+Brief introduction to the feature and what users will learn.
+
+<Note>
+Key takeaway or important context
+</Note>
+
+## How It Works
+
+Explanation with simple language...
+
+<Steps>
+  <Step title="Step 1">
+    First action to take
+  </Step>
+  <Step title="Step 2">
+    Second action to take
+  </Step>
+</Steps>
+
+## Tips & Best Practices
+
+<Tip>
+  Helpful tip for users
+</Tip>
+
+## Common Questions
+
+<Accordion title="Question 1?">
+  Answer with helpful details
+</Accordion>
+```
+
+---
+
+## 🗂️ **Navigation (mint.json)**
+
+### Adding New Pages
+
+1. **Create MDX file** in appropriate folder
+2. **Add to mint.json navigation:**
+
+```json
+{
+  "group": "Content Creation",
+  "pages": [
+    "content-creation/overview",
+    "content-creation/new-page"
+  ]
+}
+```
+
+3. **Test locally:** `mintlify dev`
+4. **Deploy:** `mintlify deploy`
+
+### Navigation Structure
+
+Keep logical grouping:
+- Introduction & Quickstart (top level)
+- Core concepts grouped
+- Feature-specific sections
+- FAQ at end
+
+---
+
+## 📸 **Screenshots & Visuals**
+
+### Always Include Visuals
+
+**Add to images folder:**
+```
+images/
+├── content-creation/
+│   └── template-selection.png
+├── accounts/
+│   └── account-setup.png
+└── analytics/
+    └── dashboard-view.png
+```
+
+**Reference in MDX:**
+```mdx
+<Frame>
+  <img src="/images/section/screenshot.png" 
+       alt="Descriptive alt text" />
+</Frame>
+```
+
+**Best practices:**
+- Use descriptive filenames
+- Add alt text (always!)
+- Keep images under 500KB
+- Use PNG for UI screenshots
+- Use JPG for photos
+
+---
+
+## 🎨 **Content Quality**
+
+### Writing Checklist
+
+- [ ] **Conversational tone** - Friendly, not formal
+- [ ] **Short paragraphs** - 2-3 sentences max
+- [ ] **Clear headings** - Descriptive and scannable
+- [ ] **Bullet points** - For lists
+- [ ] **Screenshots** - At least one per page
+- [ ] **Step-by-step** - Use Steps component
+- [ ] **Examples** - Show real usage
+- [ ] **No jargon** - Simple language only
+
+### Example - Before/After
+
+**❌ Before (too technical):**
+```mdx
+# API Integration
+
+Configure the authentication endpoint to establish a session token 
+via the OAuth2 authorization flow. Implement the callback handler 
+to process the access token and refresh token lifecycle.
+```
+
+**✅ After (user-friendly):**
+```mdx
+# Connecting Your Account
+
+Connect your TikTok account in just a few clicks:
+
+<Steps>
+  <Step title="Open Settings">
+    Click "Settings" in the sidebar, then "Accounts"
+  </Step>
+  <Step title="Add Account">
+    Click "Add TikTok Account" and log in
+  </Step>
+  <Step title="Done!">
+    Your account is now connected and ready to use
+  </Step>
+</Steps>
+
+<Tip>
+  You can connect multiple accounts and switch between them anytime!
+</Tip>
+```
+
+---
+
+## 🔧 **Mintlify Commands**
+
+```bash
+# Local development
+mintlify dev                 # Preview at localhost:3000
+
+# Build
+mintlify build              # Generate static site
+
+# Deploy
+mintlify deploy             # Deploy to Mintlify hosting
+
+# Validation
+mintlify broken-links       # Check for broken links
+```
+
+---
+
+## 🚨 **NEVER Rules**
+
+1. **NEVER use technical jargon** - Simple language only
+2. **NEVER skip screenshots** - Visual examples required
+3. **NEVER write long paragraphs** - 2-3 sentences max
+4. **NEVER forget frontmatter** - title + description required
+5. **NEVER deploy without testing** - Run `mintlify dev` first
+6. **NEVER break navigation** - Test mint.json changes
+7. **NEVER use developer terms** - API → "connect", endpoint → "feature"
+
+---
+
+## 📚 **Documentation Reference**
+
+**Project files:**
+- `mint.json` - Configuration and navigation
+- `README.md` - Setup instructions
+- 42+ MDX pages across 8 sections
+
+**Related:**
+- **farmos-web** - Main dashboard
+- **farmos-web-node** - Proxies these docs to /docs path
+- **farmos-backend** - Auth verification for docs access
+
+**For humans:** User-focused documentation for marketing teams  
+**For AI:** This file auto-loads when editing MDX files or mint.json
+
+---
+
+**This file loads when:** Editing .mdx files or mint.json  
+**Token budget:** ~600 tokens  
+**Focus:** User-friendly content, Mintlify components, writing tone
