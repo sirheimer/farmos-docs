@@ -1,11 +1,7 @@
 ---
 description: "Mintlify documentation patterns - MDX writing, tone, components, navigation, and user-focused content"
 alwaysApply: false
-globs: [
-  "farmos-docs/**/*.mdx",
-  "farmos-docs/**/*.md",
-  "farmos-docs/mint.json"
-]
+globs: **/*.mdx,**/*.md,mint.json
 ---
 
 # farmos-docs - Navigation & Patterns
